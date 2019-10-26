@@ -1,0 +1,1 @@
+Will be supporting different types of forecast (current, 3-day etc) through command line arguments
