@@ -22,7 +22,7 @@ def getweather():
 
     headers = {
         'x-rapidapi-host': "community-open-weather-map.p.rapidapi.com",
-        'x-rapidapi-key': "0012550f74msh2af374f41c7c18cp11754ejsn3d2223528243"
+        'x-rapidapi-key': "xxxxxx"
         }
 
     #API connection strings passed to connection request
