@@ -14,7 +14,7 @@ def getweather():
     else:
         print("Not an option")
         exit(0)
-    #print location selection
+    #print location selection for verification
     print(location)
 
     '''Connection API call'''
