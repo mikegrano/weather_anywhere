@@ -18,7 +18,7 @@ def getweather():
     print(location)
 
     '''Connection API call'''
-    conn = http.client.HTTPSConnection("community-open-weather-map.p.rapidapi.com")
+    conn = http.client.HTTPSConnection("community-open-weather-map.p.rapidapi.com", timeout=10)
 
     headers = {
         'x-rapidapi-host': "community-open-weather-map.p.rapidapi.com",
@@ -31,11 +31,20 @@ def getweather():
     connstring_forecast10 = "/forecast/daily?cnt=10&units=metric&q="+location
 
     if timeframe == "a":
-        conn.request("GET", connstring_actual, headers=headers)
+        while True
+            conn.request("GET", connstring_actual, headers=headers)
+            if HTTPResponse.status == 200:
+                break
     elif timeframe == "5d":
-        conn.request("GET", connstring_forecast5, headers=headers)
+        while True
+            conn.request("GET", connstring_forecast5, headers=headers)
+            if HTTPResponse.status == 200:
+                break
     elif timeframe == "10d":
-        conn.request("GET", connstring_forecast10, headers=headers)
+        while True
+            conn.request("GET", connstring_forecast10, headers=headers)
+            if HTTPResponse.status == 200:
+                break
 
     res = conn.getresponse()
     datar = res.read()
